@@ -1,0 +1,18 @@
+07:31:05 PM: DEBUG [cursor_del_pool.py:10] Inicio del método __enter__
+07:31:05 PM: DEBUG [conexion.py:30] Creación pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000021B9F1A14C0>
+07:31:05 PM: DEBUG [conexion.py:41] Conexión obtenida del pool: <connection object at 0x0000021B9EE68590; dsn: 'user=postgres password=xxx dbname=Trimen host=127.0.0.1 port=5432', closed: 0>
+07:31:05 PM: DEBUG [producto_dao.py:43] b'INSERT INTO productos(prod_descripcion, prod_unidad, prod_precio, prod_codigo, prod_id) VALUES (%s, %s, %s, %s, (SELECT max(prod_id)+1 FROM productos))'
+07:31:05 PM: DEBUG [producto_dao.py:44] Producto a insertar: None,RUBEN TE,MT,18.95,12345
+07:31:05 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método __exit__()
+07:31:05 PM: DEBUG [cursor_del_pool.py:24] Commit de la transacción
+07:31:05 PM: DEBUG [conexion.py:47] Regresamos la conexión al pool: <connection object at 0x0000021B9EE68590; dsn: 'user=postgres password=xxx dbname=Trimen host=127.0.0.1 port=5432', closed: 0>
+07:31:05 PM: DEBUG [conexion.py:48] Estado del pool: <psycopg2.pool.SimpleConnectionPool object at 0x0000021B9F1A14C0>
+07:32:05 PM: DEBUG [cursor_del_pool.py:10] Inicio del método __enter__
+07:32:05 PM: DEBUG [conexion.py:30] Creación pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002C1940914C0>
+07:32:05 PM: DEBUG [conexion.py:41] Conexión obtenida del pool: <connection object at 0x000002C192C58590; dsn: 'user=postgres password=xxx dbname=Trimen host=127.0.0.1 port=5432', closed: 0>
+07:32:05 PM: DEBUG [producto_dao.py:43] b'INSERT INTO productos(prod_descripcion, prod_unidad, prod_precio, prod_codigo, prod_id) VALUES (%s, %s, %s, %s, (SELECT max(prod_id)+1 FROM productos))'
+07:32:05 PM: DEBUG [producto_dao.py:44] Producto a insertar: None,RUBI AWA,LT,99.50,12346
+07:32:05 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método __exit__()
+07:32:05 PM: DEBUG [cursor_del_pool.py:24] Commit de la transacción
+07:32:05 PM: DEBUG [conexion.py:47] Regresamos la conexión al pool: <connection object at 0x000002C192C58590; dsn: 'user=postgres password=xxx dbname=Trimen host=127.0.0.1 port=5432', closed: 0>
+07:32:05 PM: DEBUG [conexion.py:48] Estado del pool: <psycopg2.pool.SimpleConnectionPool object at 0x000002C1940914C0>
